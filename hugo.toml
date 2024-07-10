@@ -3,3 +3,4 @@ title = 'SK'
 theme = 'svar'
 [params]
   hash = 'ab4caacc7bb4af3c5830'
+  delivery = '60 000'

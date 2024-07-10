@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  {{ partial "head.html" . }}
+
+  <body class="prodlist-page">
+
+      {{ partial "header.html" . }}
+
+    <section id="content">
+
+      {{ partial "breadcrumb.html" .}} 
+
+        <h1 class="h"><span class="blue">наша</span> ПРОДУКЦИЯ</h1>
+        <div id="prodlist">
+          <div class="list">
+            {{ range .Pages.Reverse }}
+
+              {{ if eq .Params.className "services-page" }} {{ continue }} {{ end }}
+              
+              <div class="item">
+                <img src="{{ .Params.thumb }}" width="207" height="182" loading="lazy">
+                <div class="dsc">
+                  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                  <span class="price">{{ .Params.price }} р. с НДС</span>
+                  <button>Заказать</button>
+                </div>
+              </div>
+            {{ end }}
+           </div>
+          </div>  
+
+        {{ .Content }}
+
+    </section>
+
+      {{ partial "footer.html" . }}
+
+  </body>
+</html>
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+  {{ partial "head.html" . }}
+<body class="{{ .Page.Params.className }}">
+  <div class="wrapper">
+
+    {{ partial "header.html" . }}
+    
+    <section id="content">
+      {{ partial "breadcrumb.html" .}} 
+      {{ .Content }}
+    </section>
+    
+    {{ partial "footer.html" . }}
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+title = 'My New Hugo Site'
+
+[[menus.main]]
+  name = 'Главная'
+  pageRef = '/'
+  weight = 10
+
+[[menus.main]]
+  name = 'Продукция'
+  pageRef = '/production/'
+  weight = 20
+
+[[menus.main]]
+  name = 'Услуги'
+  pageRef = '/production/izgotovlenie_izdelij_po_chertejam_ili_obraztsam_zakazchika/'
+  weight = 30
+
+[[menus.main]]
+  name = 'Доставка и оплата'
+  pageRef = '/articles/'
+  weight = 40
+
+[[menus.main]]
+  name = 'Контакты'
+  pageRef = '/contact/'
+  weight = 50
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

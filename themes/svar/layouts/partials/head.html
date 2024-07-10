@@ -1,0 +1,10 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Description }}">
+  <link rel="stylesheet" href="/assets/css/app.{{ .Site.Params.hash }}.css">
+  
+  {{ partialCached "head/css.html" . }}
+  {{ partialCached "head/js.html" . }}
+</head>

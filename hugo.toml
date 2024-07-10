@@ -1,0 +1,5 @@
+baseURL = 'https://svarcontrol.ru/'
+title = 'SK'
+theme = 'svar'
+[params]
+  hash = 'ab4caacc7bb4af3c5830'

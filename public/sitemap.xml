@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-07-10T10:03:52+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/production/izgotovlenie_izdelij_po_chertejam_ili_obraztsam_zakazchika/</loc>
+    <lastmod>2024-07-10T10:03:52+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/production/</loc>
+    <lastmod>2024-07-10T10:03:52+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/production/nabor_katetomerov_svarschika_kms316_s_kalibrovkoj_otk/</loc>
+    <lastmod>2024-07-10T09:04:48+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/production/universalnyj_shablon_svarschika_ushs4_s_kalibrovkoj_otk/</loc>
+    <lastmod>2024-07-10T09:04:47+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/production/universalnyj_shablon_svarschika_ushs3_s_kalibrovkoj_otk/</loc>
+    <lastmod>2024-07-10T09:03:52+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/articles/</loc>
+  </url><url>
+    <loc>http://localhost:1313/contact/</loc>
+  </url>
+</urlset>

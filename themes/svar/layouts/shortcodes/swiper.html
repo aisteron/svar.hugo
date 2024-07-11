@@ -1,0 +1,14 @@
+{{ $path := .Page.Params.swiper_path }}
+{{ $c := 0 }}
+
+<div class="prod swiper">
+  <div class="swiper-wrapper"> 
+    {{ range .Page.Params.swiper }}
+      <div class="swiper-slide {{if ne $c 0}}hidden{{end}}"><img src="{{$path}}{{ . }}" width="622" height="426"></div>
+      {{ $c = add $c 1 }}
+    {{end}}
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>

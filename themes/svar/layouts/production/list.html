@@ -22,7 +22,9 @@
                 <img src="{{ .Params.thumb }}" width="207" height="182" loading="lazy">
                 <div class="dsc">
                   <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-                  <span class="price">{{ .Params.price }} р. с НДС</span>
+                  {{ if isset .Params "price" }}
+                    <span class="price">{{ .Params.price }} р. с НДС</span>
+                  {{end}}
                   <button>Заказать</button>
                 </div>
               </div>

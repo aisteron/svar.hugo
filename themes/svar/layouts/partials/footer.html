@@ -2,7 +2,10 @@
   <div class="scripts-area">
     <script type="text/javascript" src="/assets/js/vendors.{{ .Site.Params.hash }}.js"></script>
     <script type="text/javascript" src="/assets/js/app.{{ .Site.Params.hash }}.js"></script>
-  </div>
+    {{ if eq hugo.Environment "production"}}
+      <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(47106894, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44704858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    {{ end }}
+    </div>
 
   <span class="orgname">ООО "Арвил"</span>
 
@@ -38,10 +41,10 @@
       </button>
     </div>
     <form class="body">
-      <input type="text" required="" maxlength="20" placeholder="Ваше имя">
-      <input type="tel" required="" maxlength="30" placeholder="Ваш телефон">
-      <input type="email" required="" maxlength="30" placeholder="Ваша электронная почта">
-      <textarea placeholder="Сообщение"></textarea>
+      <input type="text" required="" maxlength="20" placeholder="Ваше имя" name="name">
+      <input type="tel" required="" maxlength="30" placeholder="Ваш телефон" name="phone">
+      <input type="email" required="" maxlength="30" placeholder="Ваша электронная почта" name="email">
+      <textarea placeholder="Сообщение" name="message"></textarea>
       <button class="Primary mt1" type="submit">Отправить</button>
     </form>
   </dialog>

@@ -25,14 +25,16 @@
   <div id="prodlist">
     <h2><span>каталог</span> продукции</h2>
     <div class="list">
-    {{ range where .Site.Pages "Section" "production" }}
+    {{ range where .Site.Pages.Reverse "Section" "production" }}
       {{ if eq .Params.className "services-page" "prodlist-page" }} {{ continue }} {{ end }}
       <div class="item">
         <img src="{{ .Params.thumb }}" width="207" height="182" loading="lazy">
         <div class="dsc">
           <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-          <span class="price">{{ .Params.price }} р. с НДС</span>
-          <button>Заказать</button>
+          {{ if isset .Params "price" }}
+            <span class="price">{{ .Params.price }} р. с НДС</span>
+          {{end}}  
+            <button>Заказать</button>
         </div>
       </div>
     {{end}}

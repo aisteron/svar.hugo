@@ -7,8 +7,8 @@ $request_raw = file_get_contents('php://input');
 $data = json_decode($request_raw, true);
 
 
-$to = 'timotheus@list.ru'; // test mode
-//$to = 'timotheus@list.ru, '; // prod mode
+//$to = 'timotheus@list.ru'; // test mode
+$to = 'timotheus@list.ru, mail@svarkontrol.ru'; // prod mode
 
 $phone = filter_var($data['phone'], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
 if(!strlen($phone)){ die('{"success": false, "message": "Неверный номер телефона"}');}

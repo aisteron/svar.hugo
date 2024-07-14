@@ -2,5 +2,5 @@ baseURL = 'https://svarcontrol.ru/'
 title = 'SK'
 theme = 'svar'
 [params]
-  hash = '38d12aff67b718a62846'
+  hash = '48e1a5111fc6d5a33ac5'
   delivery = '60 000'
